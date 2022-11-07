@@ -69,6 +69,9 @@ line-height: 1.1428;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
+.header{
+    border-bottom: 1px #ECECEC;
+}
 
 .header-flex{
     /* margin: 0 auto; */
