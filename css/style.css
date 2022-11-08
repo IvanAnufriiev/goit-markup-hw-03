@@ -30,7 +30,7 @@ h1, h2, h3, p, ul{margin: 0px;}
 ul{list-style: none;}
 
 .container{
-    width: 1230px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -42,7 +42,6 @@ ul{list-style: none;}
     padding-top: 24px;
     padding-bottom: 25px;
     width: 145px;
-    height: 31px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -69,8 +68,8 @@ line-height: 1.1428;
 letter-spacing: 0.02em;
 text-decoration: none;
 }
-.header{
-    border-bottom: 1px #ECECEC;
+.header-portfolio{
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-flex{
@@ -92,8 +91,6 @@ text-decoration: none;
 .header-nav{
     display: block;
     color: var(--first-title-color);
-    width: 45px;
-    height: 16px;
     border: none;
     
 }
@@ -123,13 +120,17 @@ color: var(--logo-item-color);
 
 .header-contact{
     color: var(--titel-text-color);
-    width: 135px;
-    height: 16px;
+    
 }
 
 .main-fon{
+box-sizing: border-box;
 margin-left: auto;
 margin-right: auto;
+padding-top: 200px;
+padding-bottom: 200px;
+height: 600px;
+
 background: var(--footer-bcg);
 }
 .main-title{
@@ -148,8 +149,6 @@ background: var(--footer-bcg);
 }
 .hero-list{
     text-align: center;
-    height: 600px;
-    padding-top: 200px;
 }
 .main-button{
     color: var(--first-color);
@@ -215,7 +214,7 @@ background: var(--footer-bcg);
 /* ------------Наша команда----------- */
 .team{
     background-color: #F5F4FA;
-    margin-top: 94px;
+    padding-top: 94px;
     padding-bottom: 94px; 
 }
 
@@ -227,13 +226,15 @@ background: var(--footer-bcg);
     color: var(--first-title-color);
 
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .team-list{
     display: flex;
     padding-left: 0;
 }
 .img-list{
+padding-top: 30px ;
+padding-bottom: 30px;
 background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
@@ -242,7 +243,6 @@ border-radius: 0px 0px 4px 4px;
     margin-left: 30px;
 }
 .main-name{
-    padding-top: 30px;
     color:var(--first-title-color) ;
     text-align: center;
     font-weight: 500;
@@ -250,25 +250,25 @@ border-radius: 0px 0px 4px 4px;
     line-height: calc(19/16)
 }
 .main-work{
-    padding-top: 10px;
     font-size: 16px;
     line-height: 1.1875;
     text-align: center;
 }
 .footer{
-    /* width: 1600px; */
-    height: 252px;
-    background-color: var(--footer-bcg) ;
     padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-bcg) ;
+    box-sizing: border-box;
 }
 .logo-footer{
     width: 145px;
     height: 31px;
-    /* margin-top: 154px; */
-    /* padding-bottom: 20px; */
-    
+    }
+.footer-blok{
+    display: block;
 }
 .address{
+    display: block;
     margin-top: 20px;
     font-family: 'Roboto';
     font-style: normal;
@@ -278,11 +278,14 @@ border-radius: 0px 0px 4px 4px;
     color: var(--first-color);
 }
 .footer-contact{
-   margin-top: 9px;
+    
+    display: block;
+    margin-top: 9px;
     font-size: 14px;
     line-height: 1.7142;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none
+    
 }
 
 /* ----------------PORTFOLIO----------------*/
@@ -290,13 +293,8 @@ border-radius: 0px 0px 4px 4px;
 
 .header-nav{
     display: flex;
-    width: 45px;
-    height: 16px;
 }
 
-.header-nav-list .header-item + .header-item{
-   margin-left: 50px;
-}
 
 .header-contact-flex .header-item + .header-item{
    margin-left: 50px;
@@ -304,8 +302,8 @@ border-radius: 0px 0px 4px 4px;
 
 .section-list{
     display: flex;
-    margin-top: 94px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     flex-wrap: wrap;
     gap: 10px;
     background-color: var(--first-color);
@@ -316,7 +314,7 @@ border-radius: 0px 0px 4px 4px;
     gap: 30px;
 }
 .portfolio{
-     margin-top: 94px;
+     padding-top: 94px;
     padding-bottom: 94px;
 }
  
@@ -344,24 +342,17 @@ background-color: var(--logo-item-color);
     width: 352px;
     height: 36px;
 color: var(--first-title-color);
-padding-bottom: 4px;
-margin-top: 20px;
-padding-left: 24px;
 }
 
 .portfolio-name {
     color: var(--titel-text-color);
     margin-top: 4px;
-padding-bottom: 20px;
-padding-left: 24px;
-padding-right: 24px;
-width: 332px;
-height: 30px;
+
 }
 
 .portfolio-nav{
     padding-left: 0px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center
@@ -385,6 +376,9 @@ height: 30px;
 }
 .feature-element:nth-last-child(-n + 3){
     margin-bottom: 0px;
+}
+.feature-name{
+    padding: 20px 24px ;
 }
 
 .portfolio-nav .button-flex +.button-flex{
