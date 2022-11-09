@@ -346,7 +346,6 @@ background-color: var(--logo-item-color);
     cursor: pointer
 }
 
-
 .portfolio-list {
     width: 352px;
     height: 36px;
@@ -356,7 +355,6 @@ color: var(--first-title-color);
 .portfolio-name {
     color: var(--titel-text-color);
     margin-top: 4px;
-
 }
 
 .portfolio-nav{
