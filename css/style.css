@@ -366,6 +366,11 @@ color: var(--first-title-color);
     justify-content: center
 }
 
+.feature-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
 .feature-element{
     margin-right: 30px;
     margin-bottom: 30px;
